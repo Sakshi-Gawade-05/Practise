@@ -3,6 +3,5 @@ provider "aws" {
     }
 
 provider "github" {
-  # Configuration options
- token = "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"
-}
+     token = "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"
+} 
