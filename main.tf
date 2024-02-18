@@ -1,6 +1,4 @@
-provider "aws" {
-    region = "ap-south-1"
-    }
+#provider is removed
 
 resource "aws_instance" "demo" {
   ami                     = "ami-03f4878755434977f"
@@ -11,3 +9,9 @@ resource "aws_instance" "demo" {
   }
 }
 
+resource "github_repository" "example" {
+  name        = "terra_github_repo"
+  description = "This repo is created using terraform"
+
+  visibility = "public"
+}
