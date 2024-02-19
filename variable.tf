@@ -1,0 +1,8 @@
+variable "bucketname" {
+
+}
+
+variable "username" {
+
+    
+}
