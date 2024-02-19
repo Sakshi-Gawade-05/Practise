@@ -7,4 +7,11 @@ resource "null_resource" "file" {
 }
 
 
+#how to make a git github_repository
 
+resource "github_repository" "example" {
+  name        = "terra_github_repo"
+  description = "This repo is created using terraform"
+
+  visibility = "public"
+}
